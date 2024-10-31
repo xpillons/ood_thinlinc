@@ -1,18 +1,15 @@
-<%-
-  ip_host = "#{pasword}"
-%>
 
 <ol>
   <li>
     Download the ThinLinc client from the <a href="https://www.cendio.com/thinlinc/download" rel="noopener" target="_blank">Cendio website</a>, and install it on your computer.
   </li>
   <li>
-    Open the ThinLinc client and connect to <code>IP Address: <%= ip_host %></code> within the client.
+    Open the ThinLinc client and connect to <code>IP Address: <%= password %></code> within the client.
   </li>  
 </ol>
 <form action="/rnode/<%= host %>/443/" method="get" target="_blank">
   <button class="btn btn-primary" type="submit">
-    <i class="fa fa-cogs"></i> Connect to ThinLinc Web Access
+    <i class="fa fa-cogs"></i> Connect to ThinLinc Web Access <%= password %>
   </button>
 </form>
 
