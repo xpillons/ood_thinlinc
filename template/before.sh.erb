@@ -1,3 +1,5 @@
 # Export compute node IP the script is running on
 export host_ip=$(hostname -I)
-echo "Host IP: $host_ip"
+export host=$(hostname -I)
+
+echo "Host IP: $host_ip - Host: $host"
