@@ -1,2 +1,2 @@
 # Export compute node IP the script is running on
-export host_ip=$(ifconfig eth0 | grep "inet " | awk -F'[: ]+' '{ print $3 }')
+export host_ip=$(hostname -I)
