@@ -1,0 +1,22 @@
+---
+cluster: "ccw"
+form:
+  - bc_num_hours
+  - slot_type
+  - working_dir
+attributes:
+  bc_num_hours:
+    widget: "number_field"
+    label: "Maximum duration of your remote session in hours"
+    value: 1
+    help: |
+      This is the maximum duration of your session.
+    min: 1
+    max: 48
+    step: 1
+  slot_type:
+    widget: select
+    options:
+      - htc
+      - hpc
+      - gpu
