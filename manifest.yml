@@ -1,7 +1,7 @@
 ---
 name: ThinLinc
 category: Interactive Apps
-subcategory: Servers
+subcategory: GUIs
 role: batch_connect
 description: |
   This app will start a Linux Remote Desktop session using [ThinLinc].
