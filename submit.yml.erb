@@ -12,6 +12,8 @@ scheduler_args += ["--exclusive"]
 
 batch_connect:
   template: "basic"
+  conn_params:
+    - "login_ip"  
 script:
   native:
   <%- scheduler_args.each do |arg| %>
